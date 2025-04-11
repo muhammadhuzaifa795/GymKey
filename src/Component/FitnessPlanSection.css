@@ -1,0 +1,184 @@
+.fitness-plan-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 60px;
+  position: relative;
+  height: auto;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+  padding-top: 40px;
+}
+
+.trans {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: be;
+}
+
+.benefits-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.benefits-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.benefits-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #9acd32;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.join-button,
+.contact-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-button {
+  background-color: #8fdc00;
+  color: #ffffff;
+}
+
+.join-button:hover {
+  background-color: #8bbd28;
+}
+
+.contact-button {
+  background-color: transparent;
+  color: #ffffff;
+  /* border: 2px solid #ffffff; */
+}
+
+.contact-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.image-gallery {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.gallery-image {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.satisfied-customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.customer-avatars {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-left: -10px;
+}
+
+.satisfied-customers p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .image-gallery {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .trans {
+    font-size: 36px;
+  }
+
+  .benefits-list li {
+    font-size: 16px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .join-button,
+  .contact-button {
+    width: 100%;
+  }
+
+  .satisfied-customers {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trans {
+    font-size: 28px;
+  }
+
+  .benefits-list li {
+    font-size: 14px;
+  }
+
+  .gallery-image {
+    max-width: 100%;
+  }
+}

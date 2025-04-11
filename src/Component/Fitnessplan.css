@@ -1,0 +1,148 @@
+.fitness-section {
+  background-color: #000000;
+  padding: 100px 5%;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.fitness-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.fitness-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+  text-align: left;
+}
+
+.highlight {
+  color: #9acd32;
+  text-align: center;
+}
+
+.fitness-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  position: relative;
+}
+
+.fitness-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 33.33%;
+  width: 3px; /* Bold vertical line */
+  background-color: rgba(156, 255, 0, 0.4);
+}
+
+.fitness-grid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 66.66%;
+  width: 3px; /* Bold vertical line */
+  background-color: rgba(156, 255, 0, 0.4);
+}
+
+.fitness-card {
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Horizontal line removed by setting content to none */
+.fitness-card::after {
+  content: none;
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(156, 255, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #9cff00;
+  transition: all 0.3s ease;
+}
+
+.fitness-card:hover .icon-container {
+  background-color: #9cff00;
+  color: #000000;
+  transform: translateY(-5px);
+}
+
+.fitness-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.fitness-card p {
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .fitness-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fitness-grid::before {
+    left: 50%;
+    width: 3px;
+  }
+
+  .fitness-grid::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .fitness-section {
+    padding: 60px 5%;
+  }
+
+  .fitness-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .fitness-grid {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .fitness-grid::before,
+  .fitness-grid::after {
+    display: none;
+  }
+
+  .fitness-card {
+    padding: 20px;
+  }
+
+  .icon-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .fitness-card h3 {
+    font-size: 1.3rem;
+  }
+}

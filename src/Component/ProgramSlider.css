@@ -1,0 +1,165 @@
+.slider-section {
+  padding: 80px 5%;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+}
+
+/* Header styling */
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Title styling */
+.slider-header h2 {
+  font-weight: 700;
+}
+
+/* Navigation buttons container */
+.slider-navigation {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  right: 5%;
+  /* top: -50px; */
+}
+
+/* Navigation buttons */
+.nav-button {
+  background-color: transparent;
+
+  color: #8fdc00;
+  border: 3px solid #8fdc00;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: -6rem;
+}
+
+.nav-button:hover {
+  background-color: #8fdc00;
+  color: #000000;
+}
+.butte {
+  background-color: #8fdc00;
+  border: 3px solid #8fdc00;
+  color: black;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* margin-left: 6rem; */
+}
+.butte:hover {
+  background-color: transparent;
+  color: #8fdc00;
+}
+
+/* Slider container */
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Track for sliding */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual program cards */
+.program-card {
+  min-width: 100%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Card hover effect */
+.program-card:hover {
+  /* background-color: rgba(156, 255, 0, 0.1); */
+  background-color: #548702;
+  transform: translateY(-5px);
+}
+
+/* Program icon */
+.program-icon {
+  width: 72px;
+  height: 72px;
+  background-color: #9cff00;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+/* Program title */
+.program-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+/* Program description */
+.program-card p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .program-card {
+    min-width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .program-card {
+    min-width: calc(33.333% - 20px);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .slider-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .slider-header h2 {
+    font-size: 2rem;
+  }
+
+  .slider-navigation {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+
+  .program-card {
+    padding: 30px;
+  }
+
+  .nav-button {
+    width: 56px;
+    height: 56px;
+  }
+}

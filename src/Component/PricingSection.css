@@ -1,0 +1,173 @@
+.pricing-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.pricing-title {
+  color: #9acd32;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.pricing-subtitle {
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.billing-toggle {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  width: fit-content;
+  margin: 0 auto 40px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.toggle-btn.active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.packages-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.package {
+  background-color: #1a1a1aa6;
+  border-radius: 10px;
+  padding: 40px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.best-offer {
+  background-color: #8fdc00;
+  color: #000000;
+}
+
+.best-offer-label {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  transform: rotate(45deg);
+}
+
+.package-name {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.package-price {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  text-align: left;
+  color: #ffffff;
+}
+.packages-container .package:nth-child(2) {
+  min-height: 440px;
+}
+
+.package-period {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.package-features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 42px;
+}
+
+.package-features li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+  text-align: left;
+}
+
+.package-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+.best-offer .package-features li::before {
+  color: #ffffff;
+}
+
+.register-btn {
+  background-color: #8fdc00;
+  color: #ffffff;
+  border: none;
+  padding: 18px 56px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #a6ff00;
+}
+
+.best-offer .register-btn {
+  margin-top: 32px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.best-offer .register-btn:hover {
+  background-color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .packages-container {
+    gap: 10px;
+  }
+
+  .package {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .package {
+    width: 100%;
+  }
+}

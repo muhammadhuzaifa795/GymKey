@@ -1,0 +1,157 @@
+.why-section {
+  background-color: #000000;
+  padding: 100px 5%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.why-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.why-title {
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: Bebas Neue;
+}
+
+.highlight {
+  color: #9cff00;
+}
+
+.why-subtitle {
+  color: #cccccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.feature-card {
+  padding: 40px;
+  border: 2px solid rgba(157, 255, 0, 0.514);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: #9cff00;
+  transform: translateY(-5px);
+  background-color: #9dff00c5;
+  color: #ffffff; /* Main text color */
+}
+
+.feature-card:hover .feature-number {
+  color: #ffffff;
+  font-family: Bebas Neue;
+}
+
+.feature-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  font-family: Bebas Neue;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #9dff00c5;
+  margin-bottom: 15px;
+  font-family: Bebas Neue;
+  letter-spacing: 1px;
+}
+
+.feature-card:hover .feature-title {
+  color: #ffffff;
+}
+
+.feature-description {
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .why-title {
+    font-size: 3rem;
+  }
+
+  .feature-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 968px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why-header {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-section {
+    padding: 60px 5%;
+  }
+
+  .why-title {
+    font-size: 2.5rem;
+  }
+
+  .why-subtitle {
+    font-size: 1rem;
+  }
+
+  .feature-card {
+    padding: 25px;
+  }
+
+  .feature-number {
+    font-size: 2rem;
+  }
+
+  .feature-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-title {
+    font-size: 2rem;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-number {
+    font-size: 1.8rem;
+  }
+
+  .feature-title {
+    font-size: 1.2rem;
+  }
+}
