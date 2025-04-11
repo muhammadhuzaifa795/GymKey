@@ -29,8 +29,6 @@ const Footer = () => {
             <ul>
               <a href="#fitness" className="nav-link"><li>Fitness</li></a>
               <a href="https://play.google.com/store/apps/details?id=com.innovadorsolutions.gymkey&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="nav-link"><li>Download App</li></a>
-
-
             </ul>
           </div>
           <div>

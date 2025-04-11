@@ -47,7 +47,7 @@ const Navbar = () => {
         <a href="#why" className="nav-link" onClick={handleNavClick}>WHY </a>
         <a href="#pricing" className="nav-link" onClick={handleNavClick}>PRICING</a>
         <a href="#fitness" className="nav-link" onClick={handleNavClick}>FITNESS</a>
-        <button className="download-btn para" >DOWNLOAD APP</button>
+        <a href="https://play.google.com/store/apps/details?id=com.innovadorsolutions.gymkey&pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><button className="download-btn para" >DOWNLOAD APP</button></a>
       </div>
     </nav>
   );
