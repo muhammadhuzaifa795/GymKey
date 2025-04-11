@@ -14,23 +14,27 @@ const Footer = () => {
         </div>
         <div className="links">
           <div>
-            <h4>Sitemap</h4>
+            <h4>SITEMAP</h4>
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Why</li>
-              <li>Pricing</li>
+              <a href="#home" className="nav-link"><li>Home</li></a>
+              <a href="#about" className="nav-link"><li>About</li></a>
+              <a href="#why" className="nav-link"><li>Why</li></a>
+              <a href="#pricing" className="nav-link"><li>Pricing</li></a>
+
+
             </ul>
           </div>
           <div>
-            <h4>Support</h4>
+            <h4>SUPPORT</h4>
             <ul>
-              <li>Fitness</li>
-              <li>Dwonlaod App</li>
+              <a href="#fitness" className="nav-link"><li>Fitness</li></a>
+              <a href="https://play.google.com/store/apps/details?id=com.innovadorsolutions.gymkey&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="nav-link"><li>Download App</li></a>
+
+
             </ul>
           </div>
           <div>
-            <h4>Social Media</h4>
+            <h4>SOCIAL MEDIA</h4>
             <div className="social-icons">
               <Instagram size={20} />
               <Twitter size={20} />
@@ -41,9 +45,9 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>&copy; 2025 GYMKEY</p>
-        <div>
+        {/* <div>
           <span>Terms of Use</span> | <span>Privacy Policy</span>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
