@@ -58,7 +58,7 @@ const Fitnessplan = () => {
     <section className="fitness-section">
       <div className="fitness-container">
         <h2 className=" about-title heading">
-          Your Fitness & <span className="highlight">Your Way</span>
+          Your Fitness, <span className="highlight">Your Way</span>
 
         </h2>
 

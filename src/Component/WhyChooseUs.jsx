@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
       <div className="why-container">
         <div className="why-header">
           <h2 className="about-title" data-aos='fade-up'>
-            <span style={{ color: 'white' }} >WHY</span> <span className="highlight">CHOOSE US</span>
+            <span style={{ color: 'white' }} >WHY</span> <span className="highlight">Gym Key</span>
           </h2>
           <p className="why-subtitle para" data-aos='fade-up'>
             Fitness is easier when you have access to the right resources. With Gym Key, find gyms, earn points, and unlock personalized services to fast-track your results.

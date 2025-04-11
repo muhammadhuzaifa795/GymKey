@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-container ">
         <div className="about-content">
           <h2 className="about-title" data-aos="fade-right">
-            GYM KEY, YOUR GATEWAY  <span className='span2' >TO Fitness Success</span>
+            <span className='span2' > Gym Key,</span> YOUR GATEWAY TO <span className='span2' ><br /> Fitness Success</span>
             {/* <span className="highlight">EXPERIENCE</span> */}
           </h2>
           <div className="about-text para" data-aos="fade-right">
