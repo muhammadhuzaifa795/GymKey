@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-container ">
         <div className="about-content">
           <h2 className="about-title" data-aos="fade-right">
-            <span className='span2' > Gym Key,</span> YOUR GATEWAY TO <span className='span2' ><br /> Fitness Success</span>
+            YOUR GATEWAY TO <span className='span2' ><br /> Fitness Success</span>
             {/* <span className="highlight">EXPERIENCE</span> */}
           </h2>
           <div className="about-text para" data-aos="fade-right">
@@ -24,7 +24,7 @@ const About = () => {
           <div className="image-frame"></div>
           <div className="image-container">
             <img
-              src="/img/aboutus.png"
+              src="src/assets/images/aboutusimage.png"
               alt="Fitness trainer"
             />
           </div>
